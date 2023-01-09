@@ -22,9 +22,12 @@ void setup() {
 void draw() {
   background(0);
   float dt = 0.01;
+
+  // 3 Differential Equations
   float dx = (sigma * (y - x)) * dt;
   float dy = (x * (rho - z) - y) * dt;
   float dz = ((x * y) - (beta * z)) * dt;
+
   x = x + dx;
   y = y + dy;
   z = z + dz;
