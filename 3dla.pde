@@ -10,13 +10,13 @@ float beta = 8.0 / 3.0;
 
 ArrayList<PVector> points = new ArrayList<>();
 
-PeasyCam cam;
+PeasyCam camera;
 
 
 void setup() {
   size(800, 600, P3D); 
   colorMode(HSB);
-  cam = new PeasyCam(this, 0, 0, 100, 100);
+  camera = new PeasyCam(this, 0, 0, 100, 100);
 }
 
 void draw() {
